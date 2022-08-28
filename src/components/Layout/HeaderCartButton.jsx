@@ -8,7 +8,6 @@ const HeaderCartButton = (props) => {
     const cartContext = useContext(CartContext);
 
     const numberOfCartItems = cartContext.items.reduce((curNumber, item) => {
-        console.log(item)
         return curNumber + item.amount;
     }, 0)
 
